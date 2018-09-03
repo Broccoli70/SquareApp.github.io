@@ -1,86 +1,27 @@
 <!DOCTYPE html>
-<html lang="pl" dir="ltr">
-
+<html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="css/mainStyle.min.css">
-    <link rel="stylesheet" media="(max-width: 640px)" href="css/mobileStyle.min.css">
-    <link rel="stylesheet" media="(min-width: 640px)"href="css/desktopStyle.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <title>Stanisław Biernacki</title>
-  </head>
-
-  <body>
-    <div id="display" class="display">
-      <div id="logo" class="logo logo--big"></div>
-    </div>
-
-    <header>
-      <div class="menuBar">
-          <div class="logo logo--small"></div>
-
-          <div class="menu">
-            <div class="menu menu__item"> <a href="#">Głowna</a> </div>
-            <div class="menu menu__item"> <a href="galeria/index.html">Galeria</a> </div>
-            <div class="menu menu__item"> <a href="#">Kontakt</a> </div>
-            <div class="menu menu__item"> <a href="#">Dojazd</a> </div>
-          </div>
-
-      </div>
-    </header>
-
-
-
-    <main>
-      <div class="content">
-          <div class="content content__item content__item--photo1"></div>
-          <div class="content content__item content__item--photo2"></div>
-          <div class="content content__item content__item--info1">
-            <h2 class="text text--onas text--light">Stanisław Biernacki</h2>
-            <p class="text text--small text--light">Zakład stolarski działający od 1988, zainicjonowany przez influencera Stanisława.</p>
-          </div>
-          <div class="content content__item content__item--info2">
-            <h2 class="text text--onas text--dark">Galeria</h2>
-            <p class="text text--small text--dark">Prace wykonane kurde przez największego fachowca</p>
-          </div>
-
-          <div class="content content__item content__item--contact">
-
-
-              <div class="contact contact--one">
-                <h2 class="text text--contact text--dark">Kontakt</h2>
-              </div>
-
-              <div class="contact contact--two">
-
-                  <div class="circle circle--one"> <div class="icon icon--mail"></div> </div>
-                  <div class="infoPlace infoPlace--one">kraterbiernacki@gmail.com</div>
-
-                  <div class="circle circle--two"> <div class="icon icon--phone"></div> </div>
-                  <div class="infoPlace infoPlace--two">602 101 404</div>
-                  <div class="infoPlace infoPlace--two2">184 449 169</div>
-
-                  <div class="circle circle--three"> <div class="icon icon--social"></div> </div>
-                  <div class="infoPlace infoPlace--three">stolarsto FB</div>
-
-              </div>
-
-          </div>
-
-          <div class="content content__item content__item--local">
-              <h2 class="text text--local">Lokalizacja</h2>
-              <div class="maps">
-                <iframe class="maps__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1289.3427751533575!2d20.67369431207782!3d49.73554337934076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473df3e6cfd29ea1%3A0xe73c319f33ae1844!2sUnnamed+Road%2C+33-318!5e0!3m2!1sen!2spl!4v1531481632100"></iframe>
-              </div>
-          </div>
-
-    </main>
-
-
+    <link rel="stylesheet" href="css/main.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script/main.js"></script>
-    <script src="script/starter.js"></script>
-    <script src="script/mouseEvents.js"></script>
+  </head>
+  <body>
+
+    <div class="flex">
+      <canvas id="canvas" width="600" height="300"></canvas>
+        <div class="size">
+          <button class="size__btn" type="button" value="5" id="btn"></button>
+          <button class="size__btn" type="button" value="10" id="btn"></button>
+          <button class="size__btn" type="button" value="20" id="btn"></button>
+          <button class="size__btn" type="button" value="30" id="btn"></button>
+        </div>
+        <div class="colors">
+          <button class="colors__btn" type="button" id="red"></button>
+          <button class="colors__btn" type="button" id="green"></button>
+          <button class="colors__btn" type="button" id="yellow"></button>
+          <button class="colors__btn" type="button" id="pink"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
